@@ -1,0 +1,36 @@
+{% if is_granted('ROLE_USER') %}
+
+                <li class="nav-item ">
+                    <a class="nav-link" href="/"><i class="fas fa-home"></i>HomePage</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="https://docs.google.com/document/d/1s4SO7C8mSlw4S5mEeXy5xPp3jb-zXqoe3WgPAHzkycY/edit?usp=sharing"><i class="fab fa-google-drive"></i>CV Laurent</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{path('user_show', {'id' : app.user.id} )}}"><i class="fas fa-users"></i>Profil</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="{{path('chat')}}"><i class="fas fa-sign-out-alt"></i>Chat</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="/logout"><i class="fas fa-sign-out-alt"></i>logout</a>
+                </li>
+
+{% else %}
+
+                <li class="nav-item ">
+                    <a class="nav-link" href="/"><i class="fas fa-home"></i>HomePage</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="https://docs.google.com/document/d/1s4SO7C8mSlw4S5mEeXy5xPp3jb-zXqoe3WgPAHzkycY/edit?usp=sharing"><i class="fab fa-google-drive"></i>CV Laurent</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/login"><i class="fas fa-sign-in-alt"></i>Login</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="/register"><i class="fas fa-user-plus"></i>regiter</a>
+                </li>
+
+{% endif %}

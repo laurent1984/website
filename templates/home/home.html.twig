@@ -1,0 +1,121 @@
+{% extends 'base.html.twig' %}
+{% block title %}Bienvenue{% endblock %}
+{% block body %}
+{#{Header}#}
+<header class="position">
+  <div class="overlay"></div>
+    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+      <source src="https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4" type="video/mp4">
+    </video>
+    <div class="container h-100">
+      <div class="d-flex h-100 text-center align-items-center">
+        <div class="w-100 text-white">
+          <h1 class="display-3">Laporte Laurent </h1>
+          <p class="lead mb-0"> Développeur full-Stack <br />Lille <br /> <i class="fas fa-mobile-alt"></i> 07 72 29 24 12 <br /><i class="fas fa-at"></i>laportelaurentoc@gmail.com</p>
+        </div>
+      </div>
+  </div>
+</header>
+
+
+{#{Section}#}
+<section class="my-5">
+  <div class="container">
+    <div class="row">
+    {#{Nav cv}#}
+      <div class="col-md-8 mx-auto">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Formations</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Experiences</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Projets</a>
+          </li>
+        </ul>
+        {#{Content nav}#}        
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+        {#{Formations}#}
+            <h1 class="h3 mb-3 font-weight-normal center p-3">Formation</h1>
+              <div class="row ">
+                <div class="col-sm-6 ">
+                  <div class="card shadow p-3 mb-5 bg-white rounded">
+                    <div class="card-body">
+                      <h5 class="card-title">O’clock, Lille(Téléformation) — Développeur web et web mobile</h5>
+                      <h6 class="card-subtitle mb-2 text-muted">Février 2018 À Juillet 2018</h6>
+                        <p class="card-text">Formation en téléprensiel sur 5 mois avec un socle de 3 mois ou l’on étudie le html, css, php, Mysql, Javascript, apache, Git. Ensuite 1 mois de spécialisation sur Symfony. Puis 1 mois de projet ou l’on met en pratique ce que l’on a appris. Diplôme obtenue en décembre.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="card shadow p-3 mb-5 bg-white rounded">
+                    <div class="card-body">
+                      <h5 class="card-title">Lycée St-Martin, Roubaix — Bac STL</h5>
+                      <h6 class="card-subtitle mb-2 text-muted">2006</h6>
+                        <p class="card-text">Baccalauréat Section Sciences et Technique de laboratoires</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+            {#{Experiences}#}
+              <h1 class="h3 mb-3 font-weight-normal center p-3">Experience</h1>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="card shadow p-3 mb-5 bg-white rounded">
+                      <div class="card-body">
+                        <h5 class="card-title">Projets — Développeur Full-stack</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Juin 2018 À Décembre 2018</h6>
+                        <p class="card-text">En charge de la conception et la mise en oeuvre du développement de différentes application web. <br />Technologies: <br />Symfony-php-javascript-css-html-mysql-jquery-doctrine..</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="card shadow p-3 mb-5 bg-white rounded">
+                      <div class="card-body">
+                        <h5 class="card-title">Digipix, France — Résponsable des ventes/Photographe</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Juin 2010 À Août 2014</h6>
+                        <p class="card-text">Gestion administrative et humaines des exploitations de la sociétée en france et en belgique.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+              {#{Projets}#}
+                <h1 class="h3 mb-3 font-weight-normal center p-3">Projets</h1>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="card shadow p-3 mb-5 bg-white rounded">
+                        <div class="card-body">
+                          <h5 class="card-title">O’Secure — Application destinée à mettre en relation les utilisateurs .</h5>
+                          <h6 class="card-subtitle mb-2 text-muted">Full-stack sur le projet symfony.</h6>
+                          <p class="card-text">Fonctionnalitées développer: <br />Mise en place des document de conception, création de la base de données, Chat-live, personnalisation des pages erreurs, pagination, affichage de map par rapport à une adresse, intégration css avec et sans bootstrap. <br /><br />Technologie utilisée: <br />Symfony, PhP, bootstrap, javascript, node.js, ajax, api, balsamiq, GitHub.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="card shadow p-3 mb-5 bg-white rounded">
+                        <div class="card-body">
+                          <h5 class="card-title">O’Nanny — Application destinée à mettre en relation les parents et les nounous .</h5>
+                          <h6 class="card-subtitle mb-2 text-muted">Full-stack sur le projet symfony.</h6>
+                          <p class="card-text">Fonctionnalitées développer: <br />Mise en place des document de conception, création de base de données, partie sécurité de l'application( connexion), l'interface user ( création et modification de profil). <br /><br />Technologie utilisée: <br />Symfony, PhP, bootstrap, Pencil, GitHub.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+
+
+
+{% endblock %}

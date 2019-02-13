@@ -1,0 +1,15 @@
+{# templates/bundles/TwigBundle/Exception/error404.html.twig #}
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+<div class="error center bg-dark rounded-pill p-5" style="width: 100%;">
+    <h1 class="text-white">Page not found</h1>
+    
+    <h1 class="text-white">Oops! An Error Occurred</h1>
+    <h2 class="text-white">The server returned a "{{ status_code }} {{ status_text }}".</h2>
+
+    <p class="text-white"> <a href="{{ path('home') }}">Allez on retourne a la page d'accueil</a>.</p>
+<div> 
+    
+{% endblock %}

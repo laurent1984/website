@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}User{% endblock %}
+
+{% block body %}
+<div class="card-body m-auto ">
+    
+    <h1 class="center">Welcome {{ user.firstname }}</h1>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item text-primary center">Id: {{ user.id }}</li>
+            <li class="list-group-item text-primary center">Email: {{ user.email }}</li>
+            {#{<li class="list-group-item text-primary">Roles: {{ user.roles ? user.roles|json_encode : '' }}</li>}#}
+            {#{<li class="list-group-item text-primary">Password: {{ user.Password }}</li>}#}
+            <li class="list-group-item text-primary center">Name: {{ user.name }}</li>
+            <li class="list-group-item text-primary center">Firstanma: {{ user.firstname }}</li>
+        </ul>
+        <a class="btn btn-primary" href="{{ path('user_edit', {'id': user.id}) }}"><i class="fas fa-user-edit"></i>Edit</a>
+</div>
+
+
+    {#{ include('user/_delete_form.html.twig') }#}
+{% endblock %}

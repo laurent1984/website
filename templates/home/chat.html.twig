@@ -1,0 +1,29 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}User{% endblock %}
+
+{% block body %}
+    
+<!--Transmission of Twig information to JavaScript-->
+        <div class="js-user-rating" data-is-authenticated="{{ app.user ? app.user.username : 'Visiteur' }}">
+            <!-- ... -->
+        </div>
+<!--Form chat-->
+<h1 class="h3 mb-3 font-weight-normal center">Discussion Général </h1>
+    
+        <form class="form-inline shadow p-3 mb-5 bg-white rounded">
+            
+                <input type="text" class="form-control" id="form-message" placeholder="Your public message here"></input>
+                <input type="button" class="btn btn-primary" id="form-submit" value="Send message"/>
+            
+        </form>
+        <div class="shadow p-3 mb-5 bg-white rounded ">
+            <ul class="list-group " id="chat-list"></ul>
+        </div>
+    
+
+    
+
+
+
+{% endblock %}
